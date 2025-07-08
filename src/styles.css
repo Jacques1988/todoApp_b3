@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* ################################################# NORMALIZE HMTL ######################################### */
+body{
+    padding:0;
+    margin:0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ################################################ FONTS ###################################################### */
+
+@font-face {
+    font-family: 'alien';
+    src: url(./assets/fonts/Tektur-Regular.ttf);
+}
+
+
+section{
+    width:100%;
+    max-width:1400px;
+    margin: auto;
+}
+
+.teaser{
+    font-family: 'alien';
+    font-size:3rem;
+}
