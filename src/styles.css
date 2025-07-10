@@ -33,3 +33,72 @@ section{
     font-family: 'alien';
     font-size:3rem;
 }
+
+.teaser-secondary{
+    font-family: 'alien';
+    font-size:2rem;
+}
+
+.btn{
+    min-width:150px;
+    padding:1rem;
+    border:none;
+    font-size:1.3rem;
+    background-color:darkorchid;
+    color:#fff;
+    border-radius:8px;
+    transition: box-shadow 0.225s ease-in-out;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: inset 0px -25px 10px purple;
+}
+
+
+@media (max-width:1450px){
+    section {
+        padding: 0 120px;
+    }
+}
+
+
+@media (max-width:850px){
+    section {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width:570px){
+    section {
+        padding: 0 15px;
+    }
+
+    .teaser{
+        font-size:2rem;
+    }
+
+    .teaser-secondary{
+        font-size:1.5rem;
+    }
+
+    .btn{
+        padding:0.5rem;
+        font-size: 1.1rem;
+        min-width:100px;
+    }
+}
+
+
+@media (max-width:370px){
+    
+    .teaser{
+        font-size:1.8rem !important;
+    }
+
+    .teaser-secondary{
+        font-size: 1.3rem;
+    }
+
+   
+}
