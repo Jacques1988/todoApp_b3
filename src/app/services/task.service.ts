@@ -10,7 +10,7 @@ export class TaskService {
   tasks = tasks
   todos = signal<Task[]>(this.tasks)
   httpClient = inject(HttpClient)
-
+  
   constructor() {}
 
 
@@ -24,5 +24,16 @@ export class TaskService {
     this.tasks.splice(taskIndex, 1)
     this.tasks.splice(taskIndex, 0, task)
   }
+
+  addNewTask(todo: string){
+      const newTask:Task = {
+        id: (this.tasks.length + 1).toString(),
+        task: todo,
+        checked: false,
+        status: "incomplete",
+      }
+      this.tasks.push(newTask)
+  }
+
 
 }
