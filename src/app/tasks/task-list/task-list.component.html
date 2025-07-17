@@ -1,17 +1,9 @@
+@if(data()){
+<li class="list-group-element">
+  <input [checked]="data().checked" class="task-input" type="checkbox" (change)="toggleStatus()" />
+  <p [ngClass]="{'text-stroked': data().checked}" class="task-name">{{ data().task }}</p>
+  <p class="task-status">{{ data().status }}</p>
+</li>
+}
 
 
-<li class="list-group-element">
-    <input class="task-input" type="checkbox" >
-    <p class="task-name">Dackel füttern</p>
-    <p class="task-status">complete</p>
-</li>
-<li class="list-group-element">
-    <input class="task-input" type="checkbox" >
-    <p class="task-name">Dackel füttern</p>
-    <p class="task-status">incomplete</p>
-</li>
-<li class="list-group-element">
-    <input class="task-input" type="checkbox" >
-    <p class="task-name">Dackel füttern</p>
-    <p class="task-status">incomplete</p>
-</li>

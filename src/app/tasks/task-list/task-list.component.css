@@ -2,6 +2,7 @@
 
 .list-group-element{
     display: flex;
+    justify-content: space-between;
     align-items:center;
     font-family: 'alien';
     font-size:1.7rem;
@@ -32,11 +33,16 @@
 
 
 .task-name{
+    text-align:left;
     min-width:270px;
 }
 
 .task-status{
     min-width:270px;
+}
+
+.text-stroked{
+    text-decoration: line-through;
 }
 
 
